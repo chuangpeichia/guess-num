@@ -1,9 +1,14 @@
 import random
 
-r = random.randint(1, 100)
+x = input('請輸入起始值')
+x = int(x)
+y = input('請輸入終值')
+y = int(y)
+r = random.randint(x, y)
 count = 0
 while True:
-	num = input('請猜1~100中的任一個數字')
+	print('範圍為', x, '到', y)
+	num = input('請猜一個數字')
 	num = int(num)
 	count = count + 1
 	if r == num:
